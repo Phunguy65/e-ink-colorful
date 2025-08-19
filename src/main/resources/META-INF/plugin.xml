@@ -1,0 +1,44 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>e-ink-colorful</id>
+    <version>1.0.0</version>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>E-Ink-Colorful</name>
+    <category>UI</category>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://github.com/Phunguy65">Phunguy65</vendor>
+
+    <idea-version since-build="252"/>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+    <description><![CDATA[
+        <p>Experience a vibrant and colorful coding environment with the E-ink-colorful theme.</p>
+        <p>This theme is designed to mimic the aesthetics of e-ink displays while providing a rich color palette for enhanced visibility and comfort.</p>
+        <p>Perfect for developers who prefer a unique and visually appealing interface.</p>
+    ]]></description>
+
+    <!-- Short summary of new features and bugfixes in the latest plugin version.
+         Displayed on the Plugin Page and IDE Plugin Manager. Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
+    <change-notes><![CDATA[
+        <h2>Version 1.0.0</h2>
+        <ul>
+            <li>Initial release of the E-ink-colorful theme.</li>
+            <li>Designed for a vibrant and colorful coding experience.</li>
+            <li>Supports various IDEs with a focus on readability and comfort.</li>
+        </ul>
+        <p>Enjoy coding with a fresh and colorful interface!</p>
+    ]]></change-notes>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="e-ink-colorful" path="/theme/einkcolorful.theme.json"/>
+    </extensions>
+</idea-plugin>
