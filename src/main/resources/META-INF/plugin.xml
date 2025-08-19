@@ -24,15 +24,7 @@
 
     <!-- Short summary of new features and bugfixes in the latest plugin version.
          Displayed on the Plugin Page and IDE Plugin Manager. Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
-    <change-notes><![CDATA[
-        <h2>Version 1.0.0</h2>
-        <ul>
-            <li>Initial release of the E-ink-colorful theme.</li>
-            <li>Designed for a vibrant and colorful coding experience.</li>
-            <li>Supports various IDEs with a focus on readability and comfort.</li>
-        </ul>
-        <p>Enjoy coding with a fresh and colorful interface!</p>
-    ]]></change-notes>
+    <change-notes></change-notes>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->

@@ -41,12 +41,15 @@ dependencies{
 
 intellijPlatform{
     signing{
-        privateKeyFile.set(File("./cert/private.pem"))
-        certificateChainFile.set(File("./cert/chain.crt"))
-        password = System.getenv("SIGNING_PASSWORD") ?: providers.environmentVariable("SIGNING_PASSWORD").orNull
+        privateKeyFile.set(File(providers.gradleProperty("signingPrivateKeyFile").get()))
+        certificateChainFile.set(File(providers.gradleProperty("signingCertificateChainFile").get()))
+        password = providers.gradleProperty("signingPassword").get()
+        // TODO: Uncomment when you have the signing keys
+//        privateKey = providers.gradleProperty("signingPrivateKey").get()
+//        certificateChain = providers.gradleProperty("signingCertificateChain").get()
     }
     publishing{
-        token = System.getenv("PUBLISH_TOKEN") ?: providers.environmentVariable("PUBLISH_TOKEN").orNull
+        token = providers.gradleProperty("publishToken").get()
     }
     buildSearchableOptions.set(true)
 }
