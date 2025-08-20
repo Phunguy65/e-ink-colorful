@@ -38,3 +38,9 @@
 
 - Moved `einkcolorful.theme.json` to `themes` directory.
 - Updated `.gitignore` to ignore `icls` files in the `themes` directory.
+
+## 1.0.4 - 2025-08-18
+
+### Added
+
+- Added `LICENSE` file to the project root.
