@@ -31,6 +31,6 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <themeProvider id="e-ink-colorful" path="/theme/einkcolorful.theme.json"/>
+        <themeProvider id="e-ink-colorful" path="/themes/einkcolorful.theme.json"/>
     </extensions>
 </idea-plugin>

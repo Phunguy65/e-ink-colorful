@@ -218,3 +218,7 @@ replay_pid*
 
 ### IntelliJ Platform
 .intellijPlatform/
+*.icls
+### dotenv template
+.env
+
